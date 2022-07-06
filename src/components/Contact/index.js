@@ -26,15 +26,26 @@ function ContactForm() {
         setErrorMessage("");
       }
     }
-
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-    }
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formState);
+
+    setFormState({
+      name: e.target[0].value,
+      email: e.target[1].value,
+      message: e.target[2].value,
+    });
+
+    if (!errorMessage && formState.name) {
+      console.log(formState);
+
+      setFormState({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
   }
 
   return (
@@ -46,7 +57,7 @@ function ContactForm() {
         className="col-12 col-md-6"
       >
         <div className="mb-2">
-          <label htmlFor="name" className="form-label">
+          <label htmlFor="name" className="form-label mb-1">
             Name:
           </label>
           <input
@@ -58,7 +69,7 @@ function ContactForm() {
           />
         </div>
         <div className="mb-2">
-          <label htmlFor="email" className="form-label">
+          <label htmlFor="email" className="form-label mb-1">
             Email address:
           </label>
           <input
@@ -70,7 +81,7 @@ function ContactForm() {
           />
         </div>
         <div className="mb-2">
-          <label htmlFor="message" className="form-label">
+          <label htmlFor="message" className="form-label mb-1">
             Message:
           </label>
           <textarea
@@ -83,12 +94,10 @@ function ContactForm() {
         </div>
         {errorMessage && (
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <p className="error-text">* {errorMessage}</p>
           </div>
         )}
-        <button type="submit" className="button">
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   );
