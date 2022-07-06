@@ -1,10 +1,11 @@
 :root {
-  --primary: #047739;
-  --secondary: #d17a23;
-  --light: #cccccc;
-  --lighter: #ebebeb;
-  --dark: #333333;
-  --darker: #1f1f1f;
+  --background: #1f1f1f;
+  --text-dark: #333333;
+  --text-darker: #1f1f1f;
+  --text-light: #adadad;
+  --text-lighter: #ebebeb;
+  --accent-1: #00a375;
+  --accent-2: #d17a23;
   --white: #ffffff;
   --black: #000000;
 }
@@ -12,13 +13,19 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--lighter);
-  color: var(--darker);
+  background: var(--background);
+  color: var(--text-lighter);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 95%;
+  padding: 2vh 5vw;
 }
 
 span {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--text-light);
   cursor: pointer;
 }
 
@@ -28,13 +35,17 @@ li {
 
 .navbar-brand {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--accent-1);
 }
 
 .navbar-brand:hover {
-  color: var(--primary);
+  color: var(--accent-1);
 }
 
 .active span {
-  color: var(--secondary);
+  color: var(--text-lighter);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }

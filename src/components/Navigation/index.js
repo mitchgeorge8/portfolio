@@ -1,13 +1,19 @@
 import React from "react";
 
 function Navigation({ currentSelected, setCurrentSelected }) {
-  const handleClick = (e) => {
+  function handleClick(e) {
     setCurrentSelected(e.target.className);
-    e.target.ariaCurrent = "page";
-  };
+
+    if (
+      window.getComputedStyle(document.querySelector(".navbar-toggler"))
+        .display === "block"
+    ) {
+      document.querySelector(".navbar-toggler").click();
+    }
+  }
 
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-md">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           Mitchell George
@@ -29,6 +35,7 @@ function Navigation({ currentSelected, setCurrentSelected }) {
               className={`nav-item mx-2 ${
                 currentSelected === "about" && "active"
               }`}
+              aria-current={currentSelected === "about" && "page"}
             >
               <span className="about" onClick={handleClick}>
                 About Me
@@ -38,6 +45,7 @@ function Navigation({ currentSelected, setCurrentSelected }) {
               className={`nav-item mx-2 ${
                 currentSelected === "portfolio" && "active"
               }`}
+              aria-current={currentSelected === "portfolio" && "page"}
             >
               <span className="portfolio" onClick={handleClick}>
                 Portfolio
@@ -47,6 +55,7 @@ function Navigation({ currentSelected, setCurrentSelected }) {
               className={`nav-item mx-2 ${
                 currentSelected === "contact" && "active"
               }`}
+              aria-current={currentSelected === "contact" && "page"}
             >
               <span className="contact" onClick={handleClick}>
                 Contact
@@ -56,6 +65,7 @@ function Navigation({ currentSelected, setCurrentSelected }) {
               className={`nav-item mx-2 ${
                 currentSelected === "resume" && "active"
               }`}
+              aria-current={currentSelected === "resume" && "page"}
             >
               <span className="resume" onClick={handleClick}>
                 Resume
@@ -69,30 +79,3 @@ function Navigation({ currentSelected, setCurrentSelected }) {
 }
 
 export default Navigation;
-
-// <nav className="navbar">
-//   <ul className="d-flex flex-row">
-//     <li className={`mx-2 ${currentSelected === "about" && "navActive"}`}>
-//       <span className="about" onClick={handleClick}>
-//         About Me
-//       </span>
-//     </li>
-//     <li
-//       className={`mx-2 ${currentSelected === "portfolio" && "navActive"}`}
-//     >
-//       <span className="portfolio" onClick={handleClick}>
-//         Portfolio
-//       </span>
-//     </li>
-//     <li className={`mx-2 ${currentSelected === "contact" && "navActive"}`}>
-//       <span className="contact" onClick={handleClick}>
-//         Contact
-//       </span>
-//     </li>
-//     <li className={`mx-2 ${currentSelected === "resume" && "navActive"}`}>
-//       <span className="resume" onClick={handleClick}>
-//         Resume
-//       </span>
-//     </li>
-//   </ul>
-// </nav>
