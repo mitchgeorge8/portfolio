@@ -1,20 +1,24 @@
 :root {
-  --white: #FFFFFF;
-  --silver: #BFC0C0;
-  --black-coral: #4F5D75;
-  --space-cadet: #2D3142;
-  --mandarin: #EF8354;
+  --primary: #047739;
+  --secondary: #d17a23;
+  --light: #cccccc;
+  --lighter: #ebebeb;
+  --dark: #333333;
+  --darker: #1f1f1f;
+  --white: #ffffff;
+  --black: #000000;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: var(--space-cadet);
+  background: var(--lighter);
+  color: var(--darker);
 }
 
 span {
   text-decoration: none;
-  color: var(--silver);
+  color: var(--dark);
   cursor: pointer;
 }
 
@@ -22,11 +26,15 @@ li {
   list-style: none;
 }
 
-header h2 a {
+.navbar-brand {
   text-decoration: none;
-  color: var(--mandarin);
+  color: var(--primary);
 }
 
-.navActive span {
-  color: var(--white)
+.navbar-brand:hover {
+  color: var(--primary);
+}
+
+.active span {
+  color: var(--secondary);
 }
