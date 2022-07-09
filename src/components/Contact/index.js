@@ -49,7 +49,7 @@ function ContactForm() {
   }
 
   return (
-    <section>
+    <>
       <h2>Contact</h2>
       <form
         id="contact-form"
@@ -99,7 +99,7 @@ function ContactForm() {
         )}
         <button type="submit">Submit</button>
       </form>
-    </section>
+    </>
   );
 }
 
