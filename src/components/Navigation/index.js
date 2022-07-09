@@ -1,7 +1,7 @@
 import React from "react";
 
 function Navigation({ currentSelected, setCurrentSelected }) {
-  function handleClick(e) {
+  const handleClick = (e) => {
     setCurrentSelected(e.target.className);
 
     if (
@@ -10,13 +10,13 @@ function Navigation({ currentSelected, setCurrentSelected }) {
     ) {
       document.querySelector(".navbar-toggler").click();
     }
-  }
+  };
 
   return (
     <nav className="navbar navbar-expand-md">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          Mitchell George
+          <h3>Mitchell George</h3>
         </a>
         <button
           className="navbar-toggler"
