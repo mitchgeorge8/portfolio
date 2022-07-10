@@ -5,6 +5,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 
 function App() {
   const [currentSelected, setCurrentSelected] = useState("about");
@@ -15,7 +16,7 @@ function App() {
         currentSelected={currentSelected}
         setCurrentSelected={setCurrentSelected}
       ></Header>
-      <div>
+      <div className="px-16 py-12 bg-gray-100 grow">
         {currentSelected === "about" ? (
           <About></About>
         ) : currentSelected === "portfolio" ? (
@@ -26,6 +27,7 @@ function App() {
           <Resume></Resume>
         )}
       </div>
+      <Footer></Footer>
     </>
   );
 }

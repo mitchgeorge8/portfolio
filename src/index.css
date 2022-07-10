@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply text-gray-700
+#root {
+  @apply text-gray-700 flex flex-col min-h-screen;
 }
