@@ -50,7 +50,7 @@ function ContactForm() {
 
   return (
     <>
-      <h2>Contact</h2>
+      <h2 className="text-xl md:text-3xl">Contact</h2>
       <form
         id="contact-form"
         onSubmit={handleSubmit}

@@ -16,7 +16,7 @@ function App() {
         currentSelected={currentSelected}
         setCurrentSelected={setCurrentSelected}
       ></Header>
-      <div className="px-16 py-12 bg-gray-100 grow">
+      <div className="px-8 py-6 md:px-16 md:py-12 bg-gray-100 grow">
         {currentSelected === "about" ? (
           <About></About>
         ) : currentSelected === "portfolio" ? (

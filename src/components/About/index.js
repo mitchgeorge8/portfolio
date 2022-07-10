@@ -10,28 +10,23 @@ function About() {
           <p className="mb-2">Hello.</p>
           <p className="my-2">
             My name is Mitchell George. I'm an engineer by day and a web
-            developor by night. I have a passion for logic and mathematics, and
+            developer by night. I have a passion for logic and mathematics, and
             I'm pretty detail oriented. Engineering suits me well, but building
             websites has quickly become one of my favorite things to do.
           </p>
           <p className="mt-4">My formal education includes:</p>
           <ul className="list-disc list-inside mb-4">
+            <li>Certification in Full Stack Web Development</li>
             <li>Bachelor's Degree in Electrical Engineering</li>
             <li>Associate's Degree in Industrial Technology</li>
-            <li>Certification in Full Stack Web Development</li>
           </ul>
           <p className="my-2">
             Some of my biggest hobbies and passions are making coffee, playing
-            chess, and learning about nature.
-          </p>
-          <p className="my-2">
-            I have a cat named Shino, and recently I've been teaching her to do
-            tricks. Her favorite is high-five, but she can also sit, lay, and
-            stand.
+            chess, and learning about nature. I try to do all three every day.
           </p>
           <p className="mt-2 mb-4 md:mb-0">
-            If you'd like to know more about to me, find the Contact section
-            above and reach out!
+            If you'd like to get to know me better, send me a message through
+            the Contact section above!
           </p>
         </div>
 
