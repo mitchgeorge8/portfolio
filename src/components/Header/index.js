@@ -22,11 +22,11 @@ function Header({ currentSelected, setCurrentSelected }) {
 
     const navElements = document.querySelectorAll(".navElement");
     navElements.forEach((element) => {
-      element.classList.remove("border-b-gray-700");
+      element.classList.remove("border-b-gray-500");
       element.removeAttribute("aria-current");
     });
 
-    e.target.classList.add("border-b-gray-700");
+    e.target.classList.add("border-b-gray-500");
     e.target.setAttribute("aria-current", "page");
   };
 
@@ -56,7 +56,7 @@ function Header({ currentSelected, setCurrentSelected }) {
               <a
                 id="about"
                 href="/"
-                className="navElement md:py-1 border-y-transparent border-b-gray-700 border-y-2"
+                className="navElement md:py-1 border-y-transparent border-b-gray-500 border-y-2"
                 onClick={handleNavClick}
                 aria-current="page"
               >
