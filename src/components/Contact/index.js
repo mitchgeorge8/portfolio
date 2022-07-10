@@ -10,7 +10,9 @@ function ContactForm() {
   const { name, email, message } = formState;
   const [errorMessage, setErrorMessage] = useState("");
 
-  function handleBlur(e) {
+  const handleInput = (e) => {
+    setFormState({ ...formState, [e.target.name]: e.target.value });
+
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
 
@@ -26,18 +28,12 @@ function ContactForm() {
         setErrorMessage("");
       }
     }
-  }
+  };
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    setFormState({
-      name: e.target[0].value,
-      email: e.target[1].value,
-      message: e.target[2].value,
-    });
-
-    if (!errorMessage && formState.name) {
+    if (!errorMessage && name && email && message) {
       console.log(formState);
 
       setFormState({
@@ -51,42 +47,88 @@ function ContactForm() {
   return (
     <>
       <h2 className="text-xl md:text-3xl">Contact</h2>
-      <form
-        id="contact-form"
-        onSubmit={handleSubmit}
-        className="col-12 col-md-6"
-      >
-        <div className="mb-2">
-          <label htmlFor="name" className="form-label mb-1">
+
+      <form onSubmit={handleSubmit} className="grid grid-cols-3 pt-6">
+        <label htmlFor="name" className="col-start-1 text-right mx-2 mb-2">
+          Your Name:
+        </label>
+        <input
+          type="text"
+          className="col-start-2 col-span-2 md:col-span-1 mx-2 mb-2 p-1"
+          value={name}
+          onInput={handleInput}
+          name="name"
+        ></input>
+
+        <label htmlFor="email" className="col-start-1 text-right m-2">
+          Email:
+        </label>
+        <input
+          type="text"
+          className="col-start-2 col-span-2 md:col-span-1 m-2 p-1"
+          value={email}
+          onInput={handleInput}
+          name="email"
+        ></input>
+
+        <label htmlFor="message" className="col-start-1 text-right m-2">
+          Message:
+        </label>
+        <textarea
+          type="textarea"
+          className="col-start-2 col-span-2 md:col-span-1 m-2 p-1"
+          value={message}
+          onInput={handleInput}
+          name="message"
+          rows="5"
+        ></textarea>
+
+        {errorMessage && <p className="">{errorMessage}</p>}
+        <button
+          type="submit"
+          className="col-start-2 bg-gray-700 text-gray-300 py-1 rounded"
+        >
+          Submit
+        </button>
+      </form>
+    </>
+  );
+}
+
+export default ContactForm;
+
+/* <form id="contact-form" onSubmit={handleSubmit} className="">
+        <div className="">
+          <label htmlFor="name" className="">
             Name:
           </label>
           <input
             type="text"
-            className="form-control"
+            className=""
             defaultValue={name}
             onBlur={handleBlur}
             name="name"
           />
         </div>
-        <div className="mb-2">
-          <label htmlFor="email" className="form-label mb-1">
+        <div className="">
+          <label htmlFor="email" className="">
             Email address:
           </label>
           <input
             type="email"
-            className="form-control"
+            className=""
             defaultValue={email}
             onBlur={handleBlur}
             name="email"
           />
         </div>
-        <div className="mb-2">
-          <label htmlFor="message" className="form-label mb-1">
+        <div className="">
+          <label htmlFor="message" className="">
             Message:
           </label>
           <textarea
             name="message"
-            className="form-control"
+            className=""
             defaultValue={message}
             onBlur={handleBlur}
             rows="5"
@@ -94,13 +136,8 @@ function ContactForm() {
         </div>
         {errorMessage && (
           <div>
-            <p className="error-text">* {errorMessage}</p>
+            <p className="">* {errorMessage}</p>
           </div>
         )}
         <button type="submit">Submit</button>
-      </form>
-    </>
-  );
-}
-
-export default ContactForm;
+      </form> */

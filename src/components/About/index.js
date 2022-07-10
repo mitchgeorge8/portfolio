@@ -6,7 +6,7 @@ function About() {
       <h2 className="text-xl md:text-3xl">About Me</h2>
 
       <div className="md:grid md:grid-cols-3 md:gap-12 pt-6">
-        <div className="md:col-span-2 text-base md:text-lg text-gray-800">
+        <div className="md:col-span-2 md:text-lg text-gray-800">
           <p className="mb-2">Hello.</p>
           <p className="my-2">
             My name is Mitchell George. I'm an engineer by day and a web
@@ -33,7 +33,7 @@ function About() {
         <img
           src={require("../../assets/images/mitchell-george.jpg")}
           alt="Me sitting outside"
-          className="w-full h-96 object-cover object-top rounded-md"
+          className="w-full h-96 object-cover object-top rounded shadow"
         ></img>
       </div>
     </>
