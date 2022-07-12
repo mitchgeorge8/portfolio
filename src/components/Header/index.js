@@ -1,4 +1,7 @@
 function Header({ currentSelected, setCurrentSelected }) {
+  const homePage =
+    window.location.href.indexOf("/portfolio/") > -1 ? "/portfolio/" : "/";
+
   const handleMenuClick = () => {
     const navList = document.querySelector("#navList");
 
@@ -34,8 +37,8 @@ function Header({ currentSelected, setCurrentSelected }) {
     <header>
       <nav className="md:flex">
         <div className="flex justify-between m-3">
-          <h1 className="text-xl md:text-3xl">
-            <a href="/">Mitchell George</a>
+          <h1 className="text-2xl md:text-3xl">
+            <a href={homePage}>Mitchell George</a>
           </h1>
 
           <button
@@ -50,7 +53,7 @@ function Header({ currentSelected, setCurrentSelected }) {
         <div className="flex justify-end">
           <ul
             id="navList"
-            className="hidden md:flex text-right text-base md:text-lg items-center mr-3 mb-3 md:m-0"
+            className="hidden md:flex text-right text-lg items-center mr-6 mb-4 md:m-0"
           >
             <li className="mb-1 md:my-0 md:mx-2">
               <a
