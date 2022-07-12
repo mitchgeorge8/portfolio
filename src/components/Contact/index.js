@@ -49,34 +49,43 @@ function ContactForm() {
       <h2 className="text-xl md:text-3xl">Contact</h2>
 
       <form onSubmit={handleSubmit} className="grid grid-cols-3 pt-6">
-        <label htmlFor="name" className="col-start-1 text-right mx-2 mb-2">
+        <label
+          htmlFor="name"
+          className="col-start-1 text-right mx-2 mb-2 md:text-lg"
+        >
           Your Name:
         </label>
         <input
           type="text"
-          className="col-start-2 col-span-2 md:col-span-1 mx-2 mb-2 p-1"
+          className="col-start-2 col-span-2 md:col-span-1 mx-2 mb-2 p-1 rounded shadow"
           value={name}
           onInput={handleInput}
           name="name"
         ></input>
 
-        <label htmlFor="email" className="col-start-1 text-right m-2">
+        <label
+          htmlFor="email"
+          className="col-start-1 text-right m-2 md:text-lg"
+        >
           Email:
         </label>
         <input
           type="text"
-          className="col-start-2 col-span-2 md:col-span-1 m-2 p-1"
+          className="col-start-2 col-span-2 md:col-span-1 m-2 p-1 rounded shadow"
           value={email}
           onInput={handleInput}
           name="email"
         ></input>
 
-        <label htmlFor="message" className="col-start-1 text-right m-2">
+        <label
+          htmlFor="message"
+          className="col-start-1 text-right m-2 md:text-lg"
+        >
           Message:
         </label>
         <textarea
           type="textarea"
-          className="col-start-2 col-span-2 md:col-span-1 m-2 p-1"
+          className="col-start-2 col-span-2 md:col-span-1 m-2 p-1 rounded shadow"
           value={message}
           onInput={handleInput}
           name="message"
@@ -86,7 +95,7 @@ function ContactForm() {
         {errorMessage && <p className="">{errorMessage}</p>}
         <button
           type="submit"
-          className="col-start-2 bg-gray-700 text-gray-300 py-1 rounded"
+          className="col-start-2 col-span-2 md:col-start-2 md:col-span-1 m-2 p-1 rounded bg-gray-700 text-gray-100"
         >
           Submit
         </button>
