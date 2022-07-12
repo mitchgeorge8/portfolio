@@ -48,16 +48,19 @@ function ContactForm() {
     <>
       <h2 className="text-xl md:text-3xl">Contact</h2>
 
-      <form onSubmit={handleSubmit} className="grid grid-cols-3 pt-6">
+      <form
+        onSubmit={handleSubmit}
+        className="grid grid-cols-1 md:grid-cols-3 pt-6"
+      >
         <label
           htmlFor="name"
-          className="col-start-1 text-right mx-2 mb-2 md:text-lg"
+          className="col-start-1 text-left md:text-right mx-2 mb-2 md:text-lg"
         >
           Your Name:
         </label>
         <input
           type="text"
-          className="col-start-2 col-span-2 md:col-span-1 mx-2 mb-2 p-1 rounded shadow"
+          className="md:col-start-2 col-span-2 md:col-span-1 mx-2 mb-2 p-1 rounded shadow"
           value={name}
           onInput={handleInput}
           name="name"
@@ -65,13 +68,13 @@ function ContactForm() {
 
         <label
           htmlFor="email"
-          className="col-start-1 text-right m-2 md:text-lg"
+          className="col-start-1 text-left md:text-right mx-2 mt-2 md:my-2 md:text-lg"
         >
           Email:
         </label>
         <input
           type="text"
-          className="col-start-2 col-span-2 md:col-span-1 m-2 p-1 rounded shadow"
+          className="md:col-start-2 col-span-2 md:col-span-1 mx-2 my-2 md:my-2 p-1 rounded shadow"
           value={email}
           onInput={handleInput}
           name="email"
@@ -79,13 +82,13 @@ function ContactForm() {
 
         <label
           htmlFor="message"
-          className="col-start-1 text-right m-2 md:text-lg"
+          className="col-start-1 text-left md:text-right mx-2 mt-2 md:my-2 md:text-lg"
         >
           Message:
         </label>
         <textarea
           type="textarea"
-          className="col-start-2 col-span-2 md:col-span-1 m-2 p-1 rounded shadow"
+          className="md:col-start-2 col-span-2 md:col-span-1 mx-2 my-2 md:my-2 p-1 rounded shadow"
           value={message}
           onInput={handleInput}
           name="message"
@@ -95,7 +98,7 @@ function ContactForm() {
         {errorMessage && <p className="">{errorMessage}</p>}
         <button
           type="submit"
-          className="col-start-2 col-span-2 md:col-start-2 md:col-span-1 m-2 p-1 rounded bg-gray-700 text-gray-100"
+          className="col-start-1 col-span-2 md:col-start-2 md:col-span-1 m-2 p-1 rounded bg-gray-700 text-gray-100"
         >
           Submit
         </button>
