@@ -55,7 +55,9 @@ function Portfolio() {
                 className="w-full h-48 object-cover"
               ></img>
               <div className="p-2 border-t-2 border-gray-200">
-                <span className="block text-lg font-semibold">{repo.name}</span>
+                <span className="block text-lg md:text-xl font-semibold">
+                  {repo.name}
+                </span>
                 <span className="text-xs font-thin uppercase">{`${repo.topics[0]} // ${repo.topics[1]} // ${repo.topics[2]}`}</span>
               </div>
             </a>
@@ -64,12 +66,24 @@ function Portfolio() {
       </div>
       <div>
         <h3 className="pt-4 pb-2 text-lg md:text-2xl">Other Projects</h3>
-        <ul className="md:flex md:flex-wrap md:-mx-1">
-          {repoData.map((repo) => (
-            <li className="rounded shadow bg-white my-2 md:m-1 py-1 px-2">
-              <a href={repo.html_url}>{repo.name}</a>
-            </li>
-          ))}
+        <ul className="md:flex md:flex-wrap md:-mx-1 items-center">
+          {repoData
+            .filter(
+              (repo) =>
+                !featured.includes(repo.name) && repo.name !== "mitchgeorge8"
+            )
+            .map((repo) => (
+              <a href={repo.html_url} target="_blank" rel="noreferrer">
+                <li className="rounded shadow bg-white my-2 md:m-1 py-1 px-2 flex justify-between items-center md:block">
+                  <span>{repo.name}</span>
+                  {repo.topics.length > 0 && (
+                    <span className="text-xs font-thin uppercase md:block">
+                      {repo.topics[0]}
+                    </span>
+                  )}
+                </li>
+              </a>
+            ))}
         </ul>
       </div>
     </>
