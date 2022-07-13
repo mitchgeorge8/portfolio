@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import { capitalizeFirstLetter, validateEmail } from "../../utils/helpers";
+import emailjs from "emailjs-com";
+
+const SERVICE_ID = "service_9o5fd8s";
+const TEMPLATE_ID = "template_zocaksn";
+const PUBLIC_KEY = "94q9ROgtTx8hkr9rO";
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -33,8 +38,19 @@ function ContactForm() {
   function handleSubmit(e) {
     e.preventDefault();
 
+    const TEMPLATE_PARAMS = {
+      from_name: formState.name,
+      from_email: formState.email,
+      message: formState.message,
+    };
+
     if (!errorMessage && name && email && message) {
-      console.log(formState);
+      emailjs
+        .send(SERVICE_ID, TEMPLATE_ID, TEMPLATE_PARAMS, PUBLIC_KEY)
+        .then((res) => {
+          console.log("Success:", res.status, res.text);
+        })
+        .catch((err) => console.log(err));
 
       setFormState({
         name: "",
@@ -95,7 +111,11 @@ function ContactForm() {
           rows="5"
         ></textarea>
 
-        {errorMessage && <p className="">{errorMessage}</p>}
+        {errorMessage && (
+          <p className="col-start-1 col-span-2 md:col-start-2 md:col-span-1 text-center">
+            {errorMessage}
+          </p>
+        )}
         <button
           type="submit"
           className="col-start-1 col-span-2 md:col-start-2 md:col-span-1 m-2 p-1 rounded bg-gray-700 text-gray-100"
@@ -108,48 +128,3 @@ function ContactForm() {
 }
 
 export default ContactForm;
-
-/* <form id="contact-form" onSubmit={handleSubmit} className="">
-        <div className="">
-          <label htmlFor="name" className="">
-            Name:
-          </label>
-          <input
-            type="text"
-            className=""
-            defaultValue={name}
-            onBlur={handleBlur}
-            name="name"
-          />
-        </div>
-        <div className="">
-          <label htmlFor="email" className="">
-            Email address:
-          </label>
-          <input
-            type="email"
-            className=""
-            defaultValue={email}
-            onBlur={handleBlur}
-            name="email"
-          />
-        </div>
-        <div className="">
-          <label htmlFor="message" className="">
-            Message:
-          </label>
-          <textarea
-            name="message"
-            className=""
-            defaultValue={message}
-            onBlur={handleBlur}
-            rows="5"
-          />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="">* {errorMessage}</p>
-          </div>
-        )}
-        <button type="submit">Submit</button>
-      </form> */
