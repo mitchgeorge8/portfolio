@@ -53,7 +53,7 @@ function Header({ currentSelected, setCurrentSelected }) {
         <div className="flex justify-end">
           <ul
             id="navList"
-            className="hidden md:flex text-right text-lg items-center mr-6 mb-4 md:m-0"
+            className="hidden md:flex text-right text-lg items-center mr-6 mb-4 md:m-0 font-less-light"
           >
             <li className="mb-1 md:my-0 md:mx-2">
               <a
