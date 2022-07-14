@@ -7,7 +7,7 @@ function About() {
 
       <div className="md:grid md:grid-cols-3 md:gap-12 pt-6">
         <div className="md:col-span-2 md:text-lg text-gray-800">
-          <p className="mb-2">Hello.</p>
+          <p className="mb-2 font-Raleway font-semibold">Hello.</p>
           <p className="my-2">
             My name is Mitchell George. I'm an engineer by day and a web
             developer by night. I have a passion for logic and mathematics, and

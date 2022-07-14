@@ -6,6 +6,9 @@ module.exports = {
       fontWeight: {
         "less-light": 350,
       },
+      fontFamily: {
+        Raleway: "Raleway",
+      },
     },
   },
   plugins: [],

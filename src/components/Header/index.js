@@ -37,16 +37,16 @@ function Header({ currentSelected, setCurrentSelected }) {
     <header>
       <nav className="md:flex">
         <div className="flex justify-between m-3">
-          <h1 className="text-2xl md:text-3xl">
+          <h1 className="text-2xl md:text-3xl font-Raleway">
             <a href={homePage}>Mitchell George</a>
           </h1>
 
           <button
             id="menuButton"
-            className="md:hidden"
+            className="md:hidden flex items-center"
             onClick={handleMenuClick}
           >
-            <i className="fa-solid fa-bars fa-lg "></i>
+            <span class="material-symbols-outlined">menu</span>
           </button>
         </div>
 

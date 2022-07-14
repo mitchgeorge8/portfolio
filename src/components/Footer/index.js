@@ -3,17 +3,26 @@ import React from "react";
 function Footer() {
   return (
     <footer className="flex justify-center items-center">
-      <a href="https://github.com/mitchgeorge8" className="m-3">
+      <a
+        href="https://github.com/mitchgeorge8"
+        target="_blank"
+        rel="noreferrer"
+        className="m-3"
+      >
         <i className="fa-brands fa-github fa-xl"></i>
       </a>
       <a
         href="https://www.linkedin.com/in/mitchell-g-george/"
+        target="_blank"
+        rel="noreferrer"
         className="m-3"
       >
         <i className="fa-brands fa-linkedin fa-xl"></i>
       </a>
       <a
         href="https://open.spotify.com/user/mitchgeorge8"
+        target="_blank"
+        rel="noreferrer"
         className="m-3"
       >
         <i className="fa-brands fa-spotify fa-xl"></i>
