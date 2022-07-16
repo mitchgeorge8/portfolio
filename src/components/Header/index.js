@@ -17,7 +17,7 @@ function Header({ currentSelected, setCurrentSelected }) {
 
     const menuButton = document.querySelector("#menuButton");
 
-    if (getComputedStyle(menuButton).display === "block") {
+    if (getComputedStyle(menuButton).display === "flex") {
       handleMenuClick();
     }
 
@@ -46,7 +46,7 @@ function Header({ currentSelected, setCurrentSelected }) {
             className="md:hidden flex items-center"
             onClick={handleMenuClick}
           >
-            <span class="material-symbols-outlined">menu</span>
+            <span className="material-symbols-outlined">menu</span>
           </button>
         </div>
 

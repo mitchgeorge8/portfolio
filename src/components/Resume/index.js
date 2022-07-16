@@ -8,7 +8,7 @@ function Portfolio() {
 
       <article className="p-8 mt-6 bg-white rounded shadow max-w-3xl mx-auto text-sm md:text-base">
         <div>
-          <h3 className="text-2xl md:text-3xl">Mitchell George</h3>
+          <h3 className="text-2xl md:text-3xl font-Raleway">Mitchell George</h3>
           <div className="text-center font-serif my-2">
             <a
               href="mailto:mitchgeorge8@gmail"
@@ -64,7 +64,7 @@ function Portfolio() {
               >
                 Nifco America
               </a>
-              <span className="float-right">Current</span>
+              <span className="float-right font-less-light">Current</span>
               <p className="ml-4 border-l border-gray-500 pl-2 my-2">
                 Ensure that every part meets the design intent, both
                 aesthetically and functionally. Create part drawings, lead
@@ -81,7 +81,7 @@ function Portfolio() {
               >
                 Nifco America
               </a>
-              <span className="float-right">2021-2022</span>
+              <span className="float-right font-less-light">2021-2022</span>
               <p className="ml-4 border-l border-gray-500 pl-2 my-2">
                 Handled part quality complaints from a wide range of customers.
                 Worked with cross-functional teams to establish root causes and
@@ -97,7 +97,7 @@ function Portfolio() {
           <div className="">
             <div className="mb-2">
               <p className="italic">Certification</p>
-              <span className="float-right">2022</span>
+              <span className="float-right font-less-light">2022</span>
               <p className="font-semibold">Full Stack Web Development</p>
               <a
                 href="https://eng-bootcamps.osu.edu/coding/"
@@ -110,7 +110,7 @@ function Portfolio() {
             </div>
             <div className="mb-2">
               <p className="italic">Bachelor of Science</p>
-              <span className="float-right">2021</span>
+              <span className="float-right font-less-light">2021</span>
               <p className="font-semibold">Electrical Engineering</p>
               <a
                 href="https://www.mvnu.edu/undergraduate/academics/engineering"
@@ -123,7 +123,7 @@ function Portfolio() {
             </div>
             <div className="">
               <p className="italic">Associate of Applied Science</p>
-              <span className="float-right">2017</span>
+              <span className="float-right font-less-light">2017</span>
               <p className="font-semibold">Industrial Technology</p>
               <a
                 href="https://www.college-now.org/engineering-tech-degree"
@@ -150,7 +150,7 @@ function Portfolio() {
             >
               Nifco America
             </a>
-            <span className="float-right">2018-2021</span>
+            <span className="float-right font-less-light">2018-2021</span>
             <p className="ml-4 border-l border-gray-500 pl-2 my-2">
               Worked with a team to enforce campus policies, plan student
               events, and foster a healthy community. Oversaw a dorm/apartment
@@ -164,18 +164,21 @@ function Portfolio() {
             Activities
           </h4>
           <ul>
-            <li className="mb-1">
-              Honors Program<span className="float-right">2017-2020</span>
+            <li className="mb-1 ">
+              Honors Program
+              <span className="float-right font-less-light">2017-2020</span>
             </li>
-            <li className="mb-1">
-              Small group leader<span className="float-right">2018-2021</span>
+            <li className="mb-1 ">
+              Small group leader
+              <span className="float-right font-less-light">2018-2021</span>
             </li>
-            <li className="mb-1">
-              Leader of Sustainability Club
-              <span className="float-right">2020-2021</span>
+            <li className="mb-1 ">
+              Sustainability Club Leader
+              <span className="float-right font-less-light">2020-2021</span>
             </li>
             <li className="">
-              Student mentor<span className="float-right">2019</span>
+              Student mentor
+              <span className="float-right font-less-light">2019</span>
             </li>
           </ul>
         </div>

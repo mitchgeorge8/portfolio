@@ -11,7 +11,7 @@ function About() {
           <p className="my-2">
             My name is Mitchell George. I'm an engineer by day and a web
             developer by night. I have a passion for logic and mathematics, and
-            I'm pretty detail oriented. Engineering suits me well, but building
+            I'm detail oriented. Engineering suits me well, but building
             websites has quickly become one of my favorite things to do.
           </p>
           <p className="mt-4">My formal education includes:</p>
