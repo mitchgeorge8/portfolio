@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f463a873.css",
-    "main.js": "/portfolio/static/js/main.58aadcc7.js",
+    "main.css": "/portfolio/static/css/main.04e8cb08.css",
+    "main.js": "/portfolio/static/js/main.990f9485.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/Mitchell George Resume.pdf": "/portfolio/static/media/Mitchell George Resume.821beed7bdfb2e58397d.pdf",
     "static/media/mitchell-george.jpg": "/portfolio/static/media/mitchell-george.389f4fb061d64f05e55e.jpg",
     "static/media/the-tech-blog.png": "/portfolio/static/media/the-tech-blog.4e9749524c745c26d068.png",
+    "static/media/Mitchell George - Resume.pdf": "/portfolio/static/media/Mitchell George - Resume.9854687a7b38e98fa7a9.pdf",
     "static/media/team-profile-generator.png": "/portfolio/static/media/team-profile-generator.55925314745185babadb.png",
     "static/media/deep-thoughts.png": "/portfolio/static/media/deep-thoughts.f28e4b9b34904f61f608.png",
     "index.html": "/portfolio/index.html",
-    "main.f463a873.css.map": "/portfolio/static/css/main.f463a873.css.map",
-    "main.58aadcc7.js.map": "/portfolio/static/js/main.58aadcc7.js.map",
+    "main.04e8cb08.css.map": "/portfolio/static/css/main.04e8cb08.css.map",
+    "main.990f9485.js.map": "/portfolio/static/js/main.990f9485.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f463a873.css",
-    "static/js/main.58aadcc7.js"
+    "static/css/main.04e8cb08.css",
+    "static/js/main.990f9485.js"
   ]
 }
