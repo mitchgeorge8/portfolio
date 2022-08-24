@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/files/Mitchell George Resume.pdf";
+import resume from "../../assets/files/Mitchell George - Resume.pdf";
 
 function Portfolio() {
   return (
@@ -148,13 +148,14 @@ function Portfolio() {
               rel="noreferrer"
               className="uppercase font-less-light"
             >
-              Nifco America
+              Mount Vernon Nazarene University
             </a>
             <span className="float-right font-less-light">2018-2021</span>
             <p className="ml-4 border-l border-gray-500 pl-2 my-2">
               Worked with a team to enforce campus policies, plan student
               events, and foster a healthy community. Oversaw a dorm/apartment
-              of students who reported to me whenever there were issues.
+              of students, serving as their main point of contact for questions
+              and concerns.
             </p>
           </div>
         </div>
@@ -189,10 +190,110 @@ function Portfolio() {
           <ul className="flex flex-wrap -mb-2">
             <li className="mb-2">
               <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                rel="noreferrer"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
+              >
+                JavaScript
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://www.mongodb.com/mern-stack"
+                target="_blank"
+                rel="noreferrer"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
+              >
+                MERN Stack
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://restfulapi.net/"
+                target="_blank"
+                rel="noreferrer"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
+              >
+                REST APIs
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://en.wikipedia.org/wiki/Progressive_web_application"
+                target="_blank"
+                rel="noreferrer"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
+              >
+                Progressive Web Applications
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming"
+                target="_blank"
+                rel="noreferrer"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
+              >
+                Object-Oriented Programming
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/MVC"
+                target="_blank"
+                rel="noreferrer"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
+              >
+                Model-View-Controller
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping"
+                target="_blank"
+                rel="noreferrer"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
+              >
+                Object-Relational Mapping
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://tailwindcss.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
+              >
+                Tailwind CSS
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://www.w3schools.com/sql/default.asp"
+                target="_blank"
+                rel="noreferrer"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
+              >
+                SQL
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://graphql.org/"
+                target="_blank"
+                rel="noreferrer"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
+              >
+                GraphQL
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
                 href="https://developer.mozilla.org/en-US/docs/Web/HTML"
                 target="_blank"
                 rel="noreferrer"
-                className="pr-2 md:pr-3"
+                className="border-r border-gray-500 pr-2 mr-2 md:pr-3 md:mr-3"
               >
                 HTML
               </a>
@@ -202,139 +303,9 @@ function Portfolio() {
                 href="https://developer.mozilla.org/en-US/docs/Web/CSS"
                 target="_blank"
                 rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
+                className=""
               >
                 CSS
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                JavaScript
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/API"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                APIs
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://nodejs.org/en/"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                Node.js
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                Object-Oriented Programming
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://expressjs.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                Express.js
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://www.w3schools.com/sql/default.asp"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                SQL
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                Object-Relational Mapping
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Glossary/MVC"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                Model-View-Controller
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://www.mongodb.com/nosql-explained"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                NoSQL
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://www.mongodb.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                MongoDB
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://en.wikipedia.org/wiki/Progressive_web_application"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                Progressive Web Applications
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://reactjs.org/"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 px-2 md:px-3"
-              >
-                React
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://www.mongodb.com/mern-stack"
-                target="_blank"
-                rel="noreferrer"
-                className="border-l border-gray-500 pl-2 md:pl-3"
-              >
-                MERN Stack
               </a>
             </li>
           </ul>
